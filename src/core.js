@@ -1373,7 +1373,7 @@ $.extend( $.validator, {
 			if ( this.checkable( element ) ) {
 				return this.getLength( value, element ) > 0;
 			}
-			return value !== undefined && value !== null && $.trim(value.length) > 0;
+			return value !== undefined && value !== null && $.trim( value ).length > 0;
 		},
 
 		// https://jqueryvalidation.org/email-method/
